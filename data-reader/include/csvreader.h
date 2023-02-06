@@ -1,10 +1,18 @@
 #include<iostream>
+#include<string>
+#include <math.h>
+#include<vector>
 
-namespace CSVReader
+#include<fstream>
+#include<sstream>
+
+#include "csv_file.h"
+
+namespace CSV
 {
     class CSVReader
     {
         public:
-            void readCSV();
+            CSV::File readCSV(std::string filename);
     };
 }
